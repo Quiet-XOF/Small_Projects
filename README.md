@@ -1,5 +1,7 @@
 # Small_Projects
 Small projects written by me.
+## CPU Monitor
+A python program using QtPy to create a real time graph of your computer's CPU usage. 
 ## File Type Organizer
 A python program that will read the type of your files, then organizes them into folders labeled after those types. 
 ## QR Code Generator

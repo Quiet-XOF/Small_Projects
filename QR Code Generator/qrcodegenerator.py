@@ -2,7 +2,7 @@ import argparse
 import datetime
 import qrcode
 import sys
-
+        
 # A program that generates QR Codes
 def parse_args():
     parser = argparse.ArgumentParser(

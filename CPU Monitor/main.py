@@ -10,7 +10,8 @@ class Widget(QtWidgets.QWidget):
         super().__init__()
 
         self.layout = QtWidgets.QVBoxLayout(self)
-        
+        self.setWindowTitle("CPU Monitor")
+
         self.text = QtWidgets.QLabel("Starting...", alignment=QtCore.Qt.AlignCenter)
         self.layout.addWidget(self.text)
 

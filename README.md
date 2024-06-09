@@ -5,4 +5,4 @@ A python program using QtPy to create a real time graph of your computer's CPU u
 ## File Type Organizer
 A python program that will read the type of your files, then organizes them into folders labeled after those types. 
 ## QR Code Generator
-A python program using argparse that will generate a QR Code based on the text given, can change the color of background and code of image. 
+A python program using argparse that will generate a QR Code based on the text given, can change the color of background and code of image. You can also run the program without arguments to open the application. 

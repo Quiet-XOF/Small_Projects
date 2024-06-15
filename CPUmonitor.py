@@ -31,7 +31,7 @@ class Widget(QtWidgets.QWidget):
         self.timer.start(1000)
 
         self.plotWidget.setBackground((240, 240, 240))
-        self.curve = self.plotWidget.plot(pen="r")
+    
 
     @QtCore.Slot()
     def runCPU(self):
@@ -41,6 +41,13 @@ class Widget(QtWidgets.QWidget):
         if len(self.data) > self.max:
             self.data.pop(0)
         
+        if cpu_usage < 50:
+            self.curve = self.plotWidget.plot(pen="g")
+        elif cpu_usage < 80:
+            self.curve = self.plotWidget.plot(pen="o")
+        else:
+            self.curve = self.plotWidget.plot(pen="r")
+
         self.curve.setData(self.data)
         self.text.setText(f"CPU usage: {cpu_usage}%")
 
